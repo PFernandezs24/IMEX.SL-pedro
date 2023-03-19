@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMEX</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script>
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="contenedor" id="cabecera">
+                <h3 height="30%" width="30%">IMEX</h3>
+            </a>
+            <nav class="topnav" id="myTopnav">
+                <a href="servicios/sobrenosotros.html">Sobre nosotros </a>
+                <a href="servicios/service.html">servicios </a>
+                <a href="servicios/ofice.html">Oficina Tecnica</a>
+                <a href="servicios/Conctactar.html">Conctactar</a>
+            </nav>
+            <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+                <i class="fa fa-bars"></i>
+                <div class="responsive">
+                    <a href="servicios/sobrenosotros.html">Sobre nosotros </a>
+                    <a href="servicios/service.html">servicios </a>
+                    <a href="servicios/ofice.html">Oficina Tecnica</a>
+                    <a href="servicios/Conctactar.html">Conctactar</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="cajafoto">
+        <div id="cajatexto">
+            <h3>IMEX</h3>
+            <h4>Impermeabilizaciones Extremeñas SL</h4>
+        </div>
+    </div>
+    <section>
+        <div class="contenedor" id="proyectos">
+            <article>
+                <a href="servicios/service.html"> <img src="img/impermeabilizacion.png" alt="Impermeabilizaciones"></a>
+                <div class="descripcion">
+                    <h5>Impermeabilizaciones</h5>
+
+                </div>
+            </article>
+            <article>
+                <a href="servicios/service.html"><img src="img/tela.jpg" alt=""></a>
+                <div class="descripcion">
+                    <h5>Reparaciones</h5>
+                </div>
+            </article>
+            <article>
+                <a href="servicios/service.html"> <img src="img/Pabimento.jpg" alt=""></a>
+                <div class="descripcion">
+                    <h5>Resinas epoxis y poliuretano</h5>
+
+                </div>
+            </article>
+            <article>
+                <a href="servicios/ofice.html"><img src="img/descarga (1).jpg" alt=""></a>
+                <div class="descripcion">
+                    <h5>Oficina Tecnica</h5>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="contenedor" id="redes-sociales">
+            <a href="https://www.facebook.com/profile.php?id=100089652563216" class="facebook"><i
+                    class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/IMEXSL" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/imex.sl/" class="instagram"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
